@@ -16,7 +16,7 @@ const getUserProfile = require('./routes/getUserProfile');
 const StripeController = require('./routes/stripe');
 const checkToken = require('./routes/checkToken')
 //PORT
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT
 
 //MIDDLEWARE
 App.use(express.json());
@@ -36,5 +36,5 @@ App.use('/token/check', accessTokenVerify, checkToken)
 
 //SERVER & DATABASE RUN
 sequelize.sync().then(() => {
-    App.listen(PORT)
+    App.listen(PORT || 3001)
 })
