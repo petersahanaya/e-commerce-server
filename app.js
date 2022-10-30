@@ -35,6 +35,6 @@ App.use('/stripe', accessTokenVerify, StripeController)
 App.use('/token/check', accessTokenVerify, checkToken)
 
 //SERVER & DATABASE RUN
-sequelize.sync().then(() => {
-    App.listen(PORT || 5000)
+sequelize.sync({alter : true}).then(() => {
+    App.listen(PORT || 3001)
 })
