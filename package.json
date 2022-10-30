@@ -1,5 +1,5 @@
 {
-  "name": "peter sahanaya",
+  "name": "server",
   "version": "1.0.0",
   "description": "P3Store Server Side E-commerce",
   "main": "index.js",
@@ -8,7 +8,7 @@
     "dev": "nodemon app.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Peter Sahanaya",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.0.1",
