@@ -36,5 +36,5 @@ App.use('/token/check', accessTokenVerify, checkToken)
 
 //SERVER & DATABASE RUN
 sequelize.sync().then(() => {
-    App.listen(PORT || 1234)
+    App.listen(PORT || 5000)
 })
