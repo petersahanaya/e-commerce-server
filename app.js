@@ -23,9 +23,11 @@ const PORT = process.env.PORT;
 //MIDDLEWARE
 App.use(express.json());
 App.use(fileUpload());
-App.use(cors({
-  origin : "https://p3tr.netlify.app"
-}));
+App.use(
+  cors({
+    origin: "https://p3store.netlify.app",
+  })
+);
 App.use(express.urlencoded({ extended: false }));
 App.use(cookieParser());
 
