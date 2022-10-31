@@ -30,8 +30,8 @@ router.post('/', async (req, res) => {
           quantity : item.quantity
         }
       }),
-      cancel_url: `http://localhost:5173/cancel`,
-      success_url: `http://localhost:5173/success`,
+      cancel_url: `https://p3tr.netlify.app/`,
+      success_url: `https://p3tr.netlify.app/success`,
     };
     
     const session = await stripe.checkout.sessions.create(params);
